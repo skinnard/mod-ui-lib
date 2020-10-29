@@ -1,0 +1,1906 @@
+<!doctype html>
+<html lang="">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="/">
+
+	<title></title>
+
+	<script src="https://kit.fontawesome.com/61b0ba8b9e.js" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+
+<body>
+
+	<!-- fabricator icons -->
+	<svg style="display: none;">
+		<symbol id="f-icon-code" viewBox="0 0 512 512">
+			<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+		</symbol>
+		<symbol id="f-icon-notes" viewBox="0 0 512 512">
+			<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+		</symbol>
+		<symbol id="f-icon-labels" viewBox="0 0 512 512">
+			<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+		</symbol>
+		<symbol id="f-icon-menu" viewBox="0 0 512 512">
+			<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+		</symbol>
+		<symbol id="f-icon-settings" viewBox="0 0 512 512">
+			<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+		</symbol>
+	</svg>
+	<!-- /fabricator icons -->
+	<!-- fabricator menu -->
+	<div class="f-menu">
+	
+		<div class="f-controls">
+			<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+				<svg>
+					<use xlink:href="#f-icon-labels" />
+				</svg>
+			</div>
+			<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</div>
+			<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</div>
+		</div>
+	
+		<ul>
+	
+			<li>
+				<a href="index.html" class="f-menu__heading">Overview</a>
+			</li>
+	
+			<li>
+				<a href="colours.html" class="f-menu__heading">Colours</a>
+				<ul>
+					<li>
+						<a href="colours.html#01-colours">Colours</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="components.html" class="f-menu__heading">Components</a>
+				<ul>
+					<li>
+						<a href="components.html#01-typography">Typography</a>
+					</li>
+					<li>
+						<a href="components.html#02-buttons">Buttons</a>
+					</li>
+					<li>
+						<a href="components.html#03-form-elements">Form Elements</a>
+					</li>
+					<li>
+						<a href="components.html#04-tables">Tables</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="icons.html" class="f-menu__heading">Icons</a>
+				<ul>
+					<li>
+						<a href="icons.html#icons">Icons</a>
+					</li>
+				</ul>
+			</li>
+	
+	
+		</ul>
+	
+	
+	</div>
+	<!-- /fabricator menu -->
+	<div class="f-container">
+		<div class="f-control-bar">
+			<div class="f-control f-menu-toggle">
+				<svg>
+					<use xlink:href="#f-icon-menu" />
+				</svg>
+			</div>
+		</div>
+
+
+		
+<h1 data-f-toggle="labels">Icons</h1>
+
+
+    <div class="f-item-group" id="icons">
+    
+    	<div class="f-item-heading-group" data-f-toggle="labels">
+    		<h2 class="f-item-heading">Icons</h2>
+    		<div class="f-item-controls">
+    			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+    				<svg>
+    					<use xlink:href="#f-icon-code" />
+    				</svg>
+    			</span>
+    		</div>
+    	</div><div class="f-item-preview">
+    	<div class="intro-paragraph mb-5">
+    	<h3>
+    		Modzee uses custom icons for main icons and <a href="#">Font Awesome</a> for secondary icons.
+    	</h3>
+    	<p>We use a js library called <a href="https://github.com/flobacher/SVGInjector2">SVG Injector 2</a> to inject inline SVG code as an img. It keeps things much easier to organize. Just call the svg like this.</p>
+    
+    	<pre class="language-markup"><code class="language-markup">&lt;svg data-src="path/to/svg/filename.svg"&gt;&lt;/svg&gt;</code></pre>
+    
+    </div>
+    
+    <div id="fab-icon-wrapper">
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/close.svg"></svg>
+    		</div>
+    		<div class="title">close.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/back-arrow-white.svg"></svg>
+    		</div>
+    		<div class="title">back-arrow-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/back-arrow.svg"></svg>
+    		</div>
+    		<div class="title">back-arrow.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/check-group.svg"></svg>
+    		</div>
+    		<div class="title">check-group.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/check-solid-white.svg"></svg>
+    		</div>
+    		<div class="title">check-solid-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/check-solid.svg"></svg>
+    		</div>
+    		<div class="title">check-solid.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/checkbox-group.svg"></svg>
+    		</div>
+    		<div class="title">checkbox-group.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/date-field.svg"></svg>
+    		</div>
+    		<div class="title">date-field.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/download-file-darkgrey.svg"></svg>
+    		</div>
+    		<div class="title">download-file-darkgrey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/download-file-grey.svg"></svg>
+    		</div>
+    		<div class="title">download-file-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/download-file-white.svg"></svg>
+    		</div>
+    		<div class="title">download-file-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/eye-black.svg"></svg>
+    		</div>
+    		<div class="title">eye-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/eye-white.svg"></svg>
+    		</div>
+    		<div class="title">eye-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/eye.svg"></svg>
+    		</div>
+    		<div class="title">eye.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-avi-black.svg"></svg>
+    		</div>
+    		<div class="title">file-avi-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-avi-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-avi-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-avi-white.svg"></svg>
+    		</div>
+    		<div class="title">file-avi-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-blank-black.svg"></svg>
+    		</div>
+    		<div class="title">file-blank-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-blank-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-blank-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-blank-white.svg"></svg>
+    		</div>
+    		<div class="title">file-blank-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-csv-black.svg"></svg>
+    		</div>
+    		<div class="title">file-csv-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-csv-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-csv-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-csv-white.svg"></svg>
+    		</div>
+    		<div class="title">file-csv-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-doc-black.svg"></svg>
+    		</div>
+    		<div class="title">file-doc-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-doc-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-doc-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-doc-white.svg"></svg>
+    		</div>
+    		<div class="title">file-doc-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-eps-black.svg"></svg>
+    		</div>
+    		<div class="title">file-eps-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-eps-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-eps-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-eps-white.svg"></svg>
+    		</div>
+    		<div class="title">file-eps-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-generic-black.svg"></svg>
+    		</div>
+    		<div class="title">file-generic-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-generic-grey 2.svg"></svg>
+    		</div>
+    		<div class="title">file-generic-grey 2.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-generic-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-generic-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-generic-white.svg"></svg>
+    		</div>
+    		<div class="title">file-generic-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-gif-black.svg"></svg>
+    		</div>
+    		<div class="title">file-gif-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-gif-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-gif-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-gif-white.svg"></svg>
+    		</div>
+    		<div class="title">file-gif-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-jpg-black.svg"></svg>
+    		</div>
+    		<div class="title">file-jpg-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-jpg-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-jpg-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-jpg-white.svg"></svg>
+    		</div>
+    		<div class="title">file-jpg-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mp3-black.svg"></svg>
+    		</div>
+    		<div class="title">file-mp3-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mp3-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-mp3-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mp3-white.svg"></svg>
+    		</div>
+    		<div class="title">file-mp3-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mp4-black.svg"></svg>
+    		</div>
+    		<div class="title">file-mp4-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mp4-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-mp4-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mp4-white.svg"></svg>
+    		</div>
+    		<div class="title">file-mp4-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mpg-black.svg"></svg>
+    		</div>
+    		<div class="title">file-mpg-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mpg-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-mpg-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-mpg-white.svg"></svg>
+    		</div>
+    		<div class="title">file-mpg-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-pdf-black.svg"></svg>
+    		</div>
+    		<div class="title">file-pdf-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-pdf-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-pdf-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-pdf-white.svg"></svg>
+    		</div>
+    		<div class="title">file-pdf-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-png-black.svg"></svg>
+    		</div>
+    		<div class="title">file-png-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-png-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-png-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-png-white.svg"></svg>
+    		</div>
+    		<div class="title">file-png-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-ppt-black.svg"></svg>
+    		</div>
+    		<div class="title">file-ppt-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-ppt-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-ppt-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-ppt-white.svg"></svg>
+    		</div>
+    		<div class="title">file-ppt-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-svg-black.svg"></svg>
+    		</div>
+    		<div class="title">file-svg-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-svg-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-svg-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-svg-white.svg"></svg>
+    		</div>
+    		<div class="title">file-svg-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-txt-black.svg"></svg>
+    		</div>
+    		<div class="title">file-txt-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-txt-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-txt-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-txt-white.svg"></svg>
+    		</div>
+    		<div class="title">file-txt-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-upload-black.svg"></svg>
+    		</div>
+    		<div class="title">file-upload-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-upload-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-upload-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-upload-white.svg"></svg>
+    		</div>
+    		<div class="title">file-upload-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-wav-black.svg"></svg>
+    		</div>
+    		<div class="title">file-wav-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-wav-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-wav-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-wav-white.svg"></svg>
+    		</div>
+    		<div class="title">file-wav-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-wma-black.svg"></svg>
+    		</div>
+    		<div class="title">file-wma-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-wma-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-wma-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-wma-white.svg"></svg>
+    		</div>
+    		<div class="title">file-wma-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-xls-black.svg"></svg>
+    		</div>
+    		<div class="title">file-xls-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-xls-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-xls-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-xls-white.svg"></svg>
+    		</div>
+    		<div class="title">file-xls-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-zip-black.svg"></svg>
+    		</div>
+    		<div class="title">file-zip-black.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-zip-grey.svg"></svg>
+    		</div>
+    		<div class="title">file-zip-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/file-zip-white.svg"></svg>
+    		</div>
+    		<div class="title">file-zip-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/heart-selected.svg"></svg>
+    		</div>
+    		<div class="title">heart-selected.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/heart-white.svg"></svg>
+    		</div>
+    		<div class="title">heart-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/heart.svg"></svg>
+    		</div>
+    		<div class="title">heart.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/link-white.svg"></svg>
+    		</div>
+    		<div class="title">link-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/link.svg"></svg>
+    		</div>
+    		<div class="title">link.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-caret-down-solid.svg"></svg>
+    		</div>
+    		<div class="title">modzee-caret-down-solid.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-chat.svg"></svg>
+    		</div>
+    		<div class="title">modzee-chat.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-close-icon.svg"></svg>
+    		</div>
+    		<div class="title">modzee-close-icon.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-fave.svg"></svg>
+    		</div>
+    		<div class="title">modzee-fave.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-filter.svg"></svg>
+    		</div>
+    		<div class="title">modzee-filter.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-form-template.svg"></svg>
+    		</div>
+    		<div class="title">modzee-form-template.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-history.svg"></svg>
+    		</div>
+    		<div class="title">modzee-history.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-notification-icon.svg"></svg>
+    		</div>
+    		<div class="title">modzee-notification-icon.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-profile.svg"></svg>
+    		</div>
+    		<div class="title">modzee-profile.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-search.svg"></svg>
+    		</div>
+    		<div class="title">modzee-search.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-settings.svg"></svg>
+    		</div>
+    		<div class="title">modzee-settings.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-share.svg"></svg>
+    		</div>
+    		<div class="title">modzee-share.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-sort.svg"></svg>
+    		</div>
+    		<div class="title">modzee-sort.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/modzee-trending.svg"></svg>
+    		</div>
+    		<div class="title">modzee-trending.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-addcontent-green.svg"></svg>
+    		</div>
+    		<div class="title">nav-addcontent-green.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-addcontent-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-addcontent-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-calendar-green.svg"></svg>
+    		</div>
+    		<div class="title">nav-calendar-green.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-calendar-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-calendar-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-formbuilder-green.svg"></svg>
+    		</div>
+    		<div class="title">nav-formbuilder-green.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-formbuilder-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-formbuilder-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-polling-green.svg"></svg>
+    		</div>
+    		<div class="title">nav-polling-green.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-polling-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-polling-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-profile-grey.svg"></svg>
+    		</div>
+    		<div class="title">nav-profile-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-profile-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-profile-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-reporting-green.svg"></svg>
+    		</div>
+    		<div class="title">nav-reporting-green.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-reporting-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-reporting-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-search-grey.svg"></svg>
+    		</div>
+    		<div class="title">nav-search-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-search-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-search-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-settings-grey.svg"></svg>
+    		</div>
+    		<div class="title">nav-settings-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-settings-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-settings-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-support-green.svg"></svg>
+    		</div>
+    		<div class="title">nav-support-green.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/nav-support-white.svg"></svg>
+    		</div>
+    		<div class="title">nav-support-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/next-arrow-white.svg"></svg>
+    		</div>
+    		<div class="title">next-arrow-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/next-arrow.svg"></svg>
+    		</div>
+    		<div class="title">next-arrow.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/reward.svg"></svg>
+    		</div>
+    		<div class="title">reward.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/select.svg"></svg>
+    		</div>
+    		<div class="title">select.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-assets-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-assets-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-assets-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-assets-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-calendar-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-calendar-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-calendar-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-calendar-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-forms-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-forms-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-forms-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-forms-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-logout-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-logout-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-logout-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-logout-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-messages-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-messages-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-messages-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-messages-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-mybrand-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-mybrand-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-mybrand-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-mybrand-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-reports-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-reports-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-reports-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-reports-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-support-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-support-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-support-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-support-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-training-grey.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-training-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/sidenav-training-white.svg"></svg>
+    		</div>
+    		<div class="title">sidenav-training-white.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/text-area.svg"></svg>
+    		</div>
+    		<div class="title">text-area.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/text-field.svg"></svg>
+    		</div>
+    		<div class="title">text-field.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/twitter.svg"></svg>
+    		</div>
+    		<div class="title">twitter.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/view-file-darkgrey.svg"></svg>
+    		</div>
+    		<div class="title">view-file-darkgrey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/view-file-grey.svg"></svg>
+    		</div>
+    		<div class="title">view-file-grey.svg</div>
+    	</div>
+    	<div class="wrapper">
+    		<div class="icon">
+    			<svg data-src="assets/toolkit/images/view-file-white.svg"></svg>
+    		</div>
+    		<div class="title">view-file-white.svg</div>
+    	</div>
+    </div>
+    </div>
+    <div class="f-item-code f-item-hidden" data-f-toggle="code">
+    	<pre><code class="language-markup">&lt;div class&#x3D;&quot;intro-paragraph mb-5&quot;&gt;
+    	&lt;h3&gt;
+    		Modzee uses custom icons for main icons and &lt;a href&#x3D;&quot;#&quot;&gt;Font Awesome&lt;/a&gt; for secondary icons.
+    	&lt;/h3&gt;
+    	&lt;p&gt;We use a js library called &lt;a href&#x3D;&quot;https://github.com/flobacher/SVGInjector2&quot;&gt;SVG Injector 2&lt;/a&gt; to inject inline SVG code as an img. It keeps things much easier to organize. Just call the svg like this.&lt;/p&gt;
+    
+    	&lt;pre class&#x3D;&quot;language-markup&quot;&gt;&lt;code class&#x3D;&quot;language-markup&quot;&gt;&amp;lt;svg data-src&#x3D;&quot;path/to/svg/filename.svg&quot;&amp;gt;&amp;lt;/svg&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+    
+    &lt;/div&gt;
+    
+    &lt;div id&#x3D;&quot;fab-icon-wrapper&quot;&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/close.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;close.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/back-arrow-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;back-arrow-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/back-arrow.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;back-arrow.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/check-group.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;check-group.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/check-solid-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;check-solid-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/check-solid.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;check-solid.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/checkbox-group.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;checkbox-group.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/date-field.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;date-field.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/download-file-darkgrey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;download-file-darkgrey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/download-file-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;download-file-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/download-file-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;download-file-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/eye-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;eye-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/eye-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;eye-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/eye.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;eye.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-avi-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-avi-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-avi-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-avi-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-avi-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-avi-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-blank-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-blank-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-blank-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-blank-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-blank-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-blank-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-csv-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-csv-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-csv-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-csv-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-csv-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-csv-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-doc-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-doc-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-doc-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-doc-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-doc-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-doc-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-eps-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-eps-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-eps-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-eps-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-eps-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-eps-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-generic-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-generic-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-generic-grey 2.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-generic-grey 2.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-generic-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-generic-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-generic-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-generic-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-gif-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-gif-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-gif-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-gif-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-gif-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-gif-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-jpg-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-jpg-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-jpg-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-jpg-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-jpg-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-jpg-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mp3-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mp3-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mp3-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mp3-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mp3-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mp3-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mp4-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mp4-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mp4-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mp4-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mp4-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mp4-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mpg-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mpg-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mpg-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mpg-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-mpg-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-mpg-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-pdf-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-pdf-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-pdf-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-pdf-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-pdf-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-pdf-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-png-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-png-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-png-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-png-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-png-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-png-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-ppt-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-ppt-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-ppt-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-ppt-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-ppt-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-ppt-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-svg-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-svg-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-svg-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-svg-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-svg-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-svg-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-txt-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-txt-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-txt-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-txt-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-txt-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-txt-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-upload-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-upload-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-upload-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-upload-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-upload-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-upload-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-wav-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-wav-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-wav-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-wav-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-wav-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-wav-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-wma-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-wma-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-wma-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-wma-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-wma-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-wma-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-xls-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-xls-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-xls-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-xls-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-xls-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-xls-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-zip-black.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-zip-black.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-zip-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-zip-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/file-zip-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;file-zip-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/heart-selected.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;heart-selected.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/heart-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;heart-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/heart.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;heart.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/link-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;link-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/link.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;link.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-caret-down-solid.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-caret-down-solid.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-chat.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-chat.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-close-icon.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-close-icon.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-fave.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-fave.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-filter.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-filter.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-form-template.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-form-template.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-history.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-history.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-notification-icon.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-notification-icon.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-profile.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-profile.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-search.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-search.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-settings.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-settings.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-share.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-share.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-sort.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-sort.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/modzee-trending.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;modzee-trending.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-addcontent-green.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-addcontent-green.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-addcontent-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-addcontent-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-calendar-green.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-calendar-green.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-calendar-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-calendar-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-formbuilder-green.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-formbuilder-green.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-formbuilder-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-formbuilder-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-polling-green.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-polling-green.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-polling-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-polling-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-profile-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-profile-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-profile-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-profile-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-reporting-green.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-reporting-green.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-reporting-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-reporting-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-search-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-search-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-search-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-search-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-settings-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-settings-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-settings-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-settings-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-support-green.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-support-green.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/nav-support-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;nav-support-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/next-arrow-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;next-arrow-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/next-arrow.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;next-arrow.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/reward.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;reward.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/select.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;select.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-assets-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-assets-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-assets-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-assets-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-calendar-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-calendar-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-calendar-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-calendar-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-forms-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-forms-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-forms-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-forms-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-logout-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-logout-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-logout-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-logout-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-messages-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-messages-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-messages-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-messages-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-mybrand-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-mybrand-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-mybrand-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-mybrand-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-reports-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-reports-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-reports-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-reports-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-support-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-support-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-support-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-support-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-training-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-training-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/sidenav-training-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;sidenav-training-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/text-area.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;text-area.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/text-field.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;text-field.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/twitter.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;twitter.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/view-file-darkgrey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;view-file-darkgrey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/view-file-grey.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;view-file-grey.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+    		&lt;div class&#x3D;&quot;icon&quot;&gt;
+    			&lt;svg data-src&#x3D;&quot;assets/toolkit/images/view-file-white.svg&quot;&gt;&lt;/svg&gt;
+    		&lt;/div&gt;
+    		&lt;div class&#x3D;&quot;title&quot;&gt;view-file-white.svg&lt;/div&gt;
+    	&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+    </div>
+    
+    
+    </div>
+
+
+
+
+	</div>
+	<script src="assets/fabricator/scripts/f.js"></script>
+
+	<!-- toolkit scripts -->
+	<script src="assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+	<!-- svg injector -->
+	<script src="https://cdn.jsdelivr.net/npm/svg-injector-2@2.1.3/dist/svg-injector.min.js"></script>
+	<!-- /svg injector -->
+
+	<script>
+		// Do the injection for the selected Nodelist
+		new SVGInjector().inject(document.querySelectorAll('svg[data-src]'));
+	</script>
+
+</body>
+
+</html>
