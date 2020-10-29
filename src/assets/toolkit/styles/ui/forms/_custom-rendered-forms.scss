@@ -1,0 +1,64 @@
+/*Custom Rendered Form*/
+
+.custom-rendered-form h3,
+.custom-rendered-form p,
+.custom-rendered-form form {
+  display: block;
+}
+
+.custom-rendered-form.rendered-form label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #5611e8;
+}
+
+.custom-rendered-form.rendered-form .checkbox-group label,
+.custom-rendered-form.rendered-form .radio-group label {
+  font-weight: normal;
+  color: #000;
+  font-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.custom-rendered-form.rendered-form .checkbox-group label:hover,
+.custom-rendered-form.rendered-form .radio-group label:hover {
+  opacity: 0.8;
+}
+
+.custom-rendered-form.rendered-form .fb-checkbox,
+.custom-rendered-form.rendered-form .fb-radio {
+  margin: 5px 15px;
+}
+
+.custom-rendered-form.rendered-form .radio-group input:checked + label::before,
+.custom-rendered-form.rendered-form
+  .checkbox-group
+  input:checked
+  + label::before {
+  background: #16cd8a;
+}
+
+.custom-rendered-form.rendered-form select.form-control {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
+    right 0.75rem center no-repeat #fff;
+  background-color: rgb(255, 255, 255);
+  background-size: auto;
+  background-size: 8px 10px;
+  cursor: pointer;
+}
+
+.custom-rendered-form.rendered-form input[type="checkbox"],
+.custom-rendered-form.rendered-form input[type="radio"] {
+  opacity: 0;
+  margin: 0;
+  width: 0;
+  padding: 0;
+}
+
+/*END - Custom Rendered Form*/

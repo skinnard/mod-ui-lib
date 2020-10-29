@@ -1,0 +1,33 @@
+/* WYSIWYG Editor */
+.cke_chrome {
+    border: 2px solid #e8e9f3 !important;
+}
+
+.cke_top {
+    background: #f5f6fc !important;
+    border-bottom: 2px solid #e8e9f3 !important;
+}
+
+.cke_bottom {
+    background: #f5f6fc !important;
+    border-top: 2px solid #e8e9f3 !important;
+}
+
+.icon_wrapper {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+}
+
+.icon_wrapper i {
+    color: #bbbbc2;
+}
+
+table.table tr:hover .icon_wrapper,
+.icon_wrapper:hover {
+    background-color: #e1e2ea;
+}

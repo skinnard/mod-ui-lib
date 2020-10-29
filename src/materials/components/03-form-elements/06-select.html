@@ -1,0 +1,67 @@
+---
+notes: |
+    Using the <a href="https://developer.snapappointments.com/bootstrap-select/" target="_blank">Bootstrap Select</a> library for the following select dropdowns
+---
+
+<div class="form-group">
+	<label for="selectBox">Standard</label>
+	<div>
+		<select class="selectpicker">
+			<option>Mustard</option>
+			<option>Ketchup</option>
+			<option>Relish</option>
+		  </select>		  
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="selectBox">Standard With Option Groups</label>
+	<div>
+		<select class="selectpicker">
+			<optgroup label="Picnic">
+				<option>Mustard</option>
+				<option>Ketchup</option>
+				<option>Relish</option>
+			</optgroup>
+			<optgroup label="Camping">
+				<option>Tent</option>
+				<option>Flashlight</option>
+				<option>Toilet Paper</option>
+			</optgroup>
+		</select>
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="selectBox">With Search</label>
+	<div>
+		<select id="selectBox" class="selectpicker" data-live-search="true" title="Choose one"
+			data-selected-text-format="count">
+			<option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+			<option data-tokens="mustard">Burger, Shake and a Smile</option>
+			<option data-tokens="frosting">Sugar, Spice and all things nice</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="selectBox">Multi Seelect w search</label>
+	<div class="">
+		<select id="selectBox" class="selectpicker" data-live-search="true" multiple title="Choose one" data-selected-text-format="count">
+			<option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+			<option data-tokens="mustard">Burger, Shake and a Smile</option>
+			<option data-tokens="frosting">Sugar, Spice and all things nice</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="selectBox">Multi Select w Search & Options</label>
+	<div class="">
+		<select id="selectBox" class="selectpicker" data-live-search="true" multiple title="Choose one" data-selected-text-format="count" data-actions-box="true">
+			<option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+			<option data-tokens="mustard">Burger, Shake and a Smile</option>
+			<option data-tokens="frosting">Sugar, Spice and all things nice</option>
+		</select>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+/* Event Box */
+.event_wrapper {
+    border-bottom: 1px solid #2c325c;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.event_wrapper .event_date {
+    background-color: #2c325c;
+    padding: 5px 7px 0px 8px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.event_wrapper .event_details {
+    padding-left: 95px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.event_wrapper .event_details strong {
+    display: block;
+    font-size: 18px;
+}

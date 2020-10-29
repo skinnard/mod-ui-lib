@@ -1,0 +1,29 @@
+/*** alert - locked note ***/
+.alert-danger {
+    color: #333333;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    background-image: url(https://modzee.com/files/note-bg-2.png) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+/** share pop up **/
+
+#share-disclaimer {
+    font-size: 13px !important;
+    color: #333;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.shared-with-item-container .green-button {
+    margin-right: 5px !important;
+    padding: 0 !important;
+    transition: none;
+    color: #16cd8a !important;
+    background-color: transparent;
+}
+
+#delete-confirmation.modal-dialog .modal-content {
+    padding: 25px;
+}

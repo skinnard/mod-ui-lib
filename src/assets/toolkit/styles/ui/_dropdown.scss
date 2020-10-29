@@ -1,0 +1,145 @@
+.dropdown-menu.more-padding {
+  position: absolute !important;
+  top: -10px !important;
+  left: -50px !important;
+  z-index: 1000 !important;
+  float: right !important;
+  min-width: 10rem !important;
+  padding: 12.1px !important;
+  margin: 0.125rem 0 0 !important;
+  font-size: 1rem !important;
+  color: #212529 !important;
+  text-align: left !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0.25rem !important;
+}
+
+.dropdown-menu,
+.dropdown-content.select-dropdown.multiple-select-dropdown {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a,
+.dropdown-menu a:link,
+.dropdown-menu a:focus {
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  text-decoration: none !important;
+  color: #525252 !important;
+  font-weight: normal !important;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 10px 0 10px !important;
+  border-radius: 3px;
+}
+
+.dropdown-menu a.active {
+  background-color: #eaedf0;
+  color: #525252;
+  font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: none;
+  background-color: $bg;
+  color: #525252;
+}
+
+.dropdown-menu i {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  color: #525252;
+  font-size: 16px;
+}
+
+.dropdown-menu div {
+  padding: 0px 10px;
+}
+
+tr .dropdown-menu a,
+tr .dropdown-menu a:link,
+tr .dropdown-menu a:focus,
+#users_cards .dropdown-menu a {
+  padding: 0px 10px 0px 40px !important;
+}
+
+.dropdown {
+  cursor: pointer;
+  top: 2px;
+  right: 12px;
+
+  &:hover {
+    #dropdownMenuButton {
+      .fa-ellipsis-h {
+        color: $grey;
+      }
+    }
+  }
+
+  #dropdownMenuButton {
+    .fa-ellipsis-h {
+      font-size: 25px;
+      color: $light-grey-alt;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .dropdown-menu {
+    .bs-actionsbox {
+      padding: 0px 15px 0px 10px; 
+      
+      .btn-group {
+        padding: 0;
+
+        button {
+          padding: 6px 0 3px 0;
+          border: none;
+          color: $light-grey-alt;
+          @include font-size(12);
+
+          &:hover {
+            color: #333;
+            background: inherit;
+          }
+        }
+      }
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      i {
+        position: relative;
+        font-size: 16px;
+        padding-right: 15px;
+        color: $grey !important;
+      }
+
+      span {
+        margin-top: 4px;
+        color: $grey !important;
+        line-height: 30px;
+      }
+
+      &:hover {
+        background: none;
+        box-shadow: none;
+        border-radius: inherit;
+        transition: none;
+
+        span,
+        i {
+          color: $dark-grey !important;
+        }
+      }
+    }
+  }
+}

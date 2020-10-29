@@ -1,0 +1,35 @@
+#breadcrumbs {
+    line-height: 21px;
+    font-size: 14px;
+    background: #f6f7fc;
+    color: #707070;
+    margin: -26px -40px 10px;
+    width: calc(100% + 80px);
+    padding: 0 40px;
+}
+
+#breadcrumbs span {
+    padding: 10px 16px 8px 0px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+#breadcrumbs strong {
+    font-weight: 600;
+}
+
+#breadcrumbs span:last-child {
+    border-right: none;
+}
+
+#breadcrumbs span:first-child::before {
+    display: none;
+}
+
+#breadcrumbs span::before {
+    content: ">";
+    position: relative;
+    right: 16px;
+    top: 1px;
+    color: #bbb;
+}

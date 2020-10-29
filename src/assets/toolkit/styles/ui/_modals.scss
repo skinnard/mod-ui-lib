@@ -1,0 +1,43 @@
+.default-modal-header {
+  background-color: #5e60ac;
+  color: #fff;
+}
+
+.modzee-modal-highlight {
+  background: transparent !important;
+}
+
+.modal-footer > :not(:last-child),
+.modal-footer > :not(:first-child) {
+  margin-right: 0.5rem;
+}
+
+// #popup_container {
+.modal-content {
+  .modal-body {
+    padding: 2rem 2rem 1rem;
+  }
+
+  .modal-footer {
+    border-top: none;
+
+    .approve-brn {
+      margin: 0;
+    }
+
+    button {
+      margin-bottom: 15px;
+    }
+
+    .approve_btn {
+      margin-left: 10px;
+
+      @include mq(custom, max, 550) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+// }
+
+// #setPasswordModal {}

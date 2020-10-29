@@ -1,0 +1,21 @@
+/*Due date training*/
+.training_group .due_date {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    background: orange;
+    padding: 5px 10px;
+    color: #fff;
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.training_group .due_date span {
+    font-weight: bold;
+}
+
+#sidebar ul ul li a {
+    font-size: 14px !important;
+}

@@ -1,0 +1,23 @@
+/* Columns */
+.half_column_container {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+  
+  .half_column {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+}
+
+
+.third_column_container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  .third_column {
+    width: 33%;
+  }
+}

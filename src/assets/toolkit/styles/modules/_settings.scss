@@ -1,0 +1,33 @@
+/* Settings Style */
+
+.settings_wrapper {
+    border-top: 1px solid #dcdde8;
+    padding: 20px 15px 10px 10px !important;
+}
+
+.settings_wrapper .switch_wrapper {
+    position: relative;
+}
+
+.settings_wrapper .switch_title {
+    text-align: left;
+    line-height: 32px;
+}
+
+.settings_wrapper .switch {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.settings_wrapper .switch.round label .lever::after {
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    top: 3px;
+}
+
+.settings_wrapper .switch.round label .lever {
+    width: 45px;
+    height: 25px;
+}

@@ -1,0 +1,86 @@
+.indigo {
+    background-color: #4e05e7 !important;
+}
+
+.teal {
+    background-color: #00c38f;
+}
+
+.teal-light {
+    background-color: #e3efeb !important;
+}
+
+.primary-bg {
+    background-color: #16cd8a !important;
+}
+
+.primary-color {
+    color: #16cd8a !important;
+}
+
+// Breakpoints
+// $breakpoint-xsmall: 400px;
+// $breakpoint-small: 768px;
+// $breakpoint-med: 960px;
+// $breakpoint-large: 1200px;
+// $breakpoint-xlarge: 1400px;
+
+// Test Colours
+$test1: pink;
+$test2: steelblue;
+$test3: lightgreen;
+$test4: tomato;
+
+// Core colors
+$indigo: #4e05e7 !default;
+$indigo-hover: #433f87 !default;
+$teal: #16cd8a !default;
+$teal-hover: #17b97e !default;
+$teal-light: #e3efeb !default;
+$red: #ee2c55 !default;
+$red-hover: #cc284b !default;
+$light-purple: #91A8F6 !default;
+$light-purple: #91A8F6 !default;
+$dark-bg: #333333 !default;
+
+$grey: #949494 !default;
+$alt-grey: #777777 !default;
+$dark-grey: #535353 !default;
+$light-grey: #f2f2f2 !default;
+$light-grey-alt: #C4C4C4 !default;
+
+$border: #e8e9f3 !default;
+$border-dark: #dedede !default;
+
+$bg: #f6f6f6 !default;
+
+$font-grey: #999 !default;
+
+$primary-color: #16cd8a !default;
+
+// Border Radius
+$br: 5px !default;
+$br-sm: 3px !default;
+$br-lg: 10px !default;
+$br-xlg: 20px !default;
+
+// Box shadow
+$bs: 0 0 40px 0 rgba(0,0,0,0.15) !default;
+
+// Grid gap
+$gg: 20px !default;
+
+// $link-color: #000 !default;
+
+// // Fonts
+// $main-font-300: "hk_grotesklight", sans-serif !default;
+// $main-font-500: "hk_groteskregular", sans-serif !default;
+// $main-font-700: "hk_grotesksemibold", sans-serif !default;
+// $main-font-900: "hk_groteskbold", sans-serif !default;
+
+// // Navbar
+// $navbar-height: 120px; 
+// $navbar-scrolled-height: 70px;
+
+// // Mobile Menu 
+// $mob-menu-padding: 10px;

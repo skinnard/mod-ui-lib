@@ -1,0 +1,265 @@
+/* Top Bar Notifications */
+#topbar-notifications,
+#topbar-messages {
+    position: relative;
+}
+
+.notifications-alert {
+    background-color: #43bd8f;
+    position: absolute;
+    top: -10px;
+    right: -2px;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid #212121;
+    display: none;
+}
+
+#topbar-messages .notifications-alert,
+#topbar-notifications .notifications-alert,
+#topbar-messages-2 .notifications-alert,
+#topbar-notifications .notifications-alert {
+    display: none;
+}
+
+#topbar-messages .notifications-alert.active,
+#topbar-notifications .notifications-alert.active,
+#topbar-messages-2 .notifications-alert.active,
+#topbar-notifications .notifications-alert.active {
+    display: block !important;
+}
+
+#topbar-notifications .notifications-alert {
+    background-color: #4e05e7;
+    right: -5px;
+}
+
+#topbar-notifications-wrapper {
+    background-color: #f5f6fd;
+}
+
+#topbar-notifications-wrapper-2 {
+    background-color: #f5f6fd;
+}
+
+#user_profile_notifications,
+#user_profile_notifications-2 {
+    background-color: #f5f6fd;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    padding: 0 0px 5px 0px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+#user_profile_notifications .title,
+#user_profile_notifications .title_settings,
+#user_profile_notifications-2 .title,
+#user_profile_notifications-2 .title_settings {
+    position: relative;
+    padding: 2px 20px 10px 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #eeeffb;
+}
+
+#user_profile_notifications .settings,
+#user_profile_notifications-2 .settings {
+    display: none;
+}
+
+#user_profile_notifications a i,
+#user_profile_notifications-2 a i {
+    color: #000000 !important;
+    font-size: 25px !important;
+    line-height: 20px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 20px !important;
+    height: 20px !important;
+    top: 3px;
+}
+
+#user_profile_notifications .title_settings.settings,
+#user_profile_notifications-2 .title_settings.settings {
+    font-size: 13px !important;
+    padding: 6px 0 15px !important;
+}
+
+#user_profile_notifications .notification_settings,
+#user_profile_notifications .notification_previous,
+#user_profile_notifications .notification_readall,
+#user_profile_notifications-2 .notification_settings,
+#user_profile_notifications-2 .notification_previous,
+#user_profile_notifications-2 .notification_readall {
+    color: #16cd8a;
+    height: 20px;
+    position: absolute;
+    display: block;
+    top: 0px;
+    padding: 0px;
+    width: 20px;
+}
+
+#user_profile_notifications .notification_readall,
+#user_profile_notifications-2 .notification_readall {
+    right: 15px;
+}
+
+#user_profile_notifications .notification_settings,
+#user_profile_notifications .notification_previous,
+#user_profile_notifications-2 .notification_settings,
+#user_profile_notifications-2 .notification_previous {
+    left: 0px;
+}
+
+#user_profile_notifications a,
+#user_profile_notifications-2 a {
+    white-space: normal !important;
+}
+
+#user_profile_notifications .icon-eye.nav-dark,
+#user_profile_notifications-2 .icon-eye.nav-dark {
+    left: -5px !important;
+}
+
+#user_profile_notifications .content_wrapper,
+#user_profile_notifications-2 .content_wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+}
+
+#user_profile_notifications .content,
+#user_profile_notifications-2 .content {
+    padding: 0px 17px 0 0;
+    /* Increase/decrease this value for cross-browser compatibility */
+    max-height: 400px;
+    width: 106%;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    /* So the width will be 100% + 17px */
+}
+
+#user_profile_notifications .notification_item,
+#user_profile_notifications-2 .notification_item {
+    border-top: 1px solid #dcdde8;
+    padding: 0px;
+    position: relative;
+}
+
+#user_profile_notifications .notification_item a.notification_link.has_read,
+#user_profile_notifications-2 .notification_item a.notification_link.has_read {
+    border-right: 3px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+}
+
+#user_profile_notifications .notification_item a.notification_link,
+#user_profile_notifications-2 .notification_item a.notification_link {
+    text-align: left;
+    display: block;
+    padding: 10px !important;
+    background-color: #f5f6fd;
+    border-right: 25px solid #4e05e7;
+    border-radius: 0px;
+}
+
+#user_profile_notifications .notification_item .notification_date,
+#user_profile_notifications-2 .notification_item .notification_date {
+  font-size:11px;
+  padding:0 0 7px 0;
+  line-height:0px;
+}
+
+#user_profile_notifications .notification_item h3.notification_type,
+#user_profile_notifications-2 .notification_item h3.notification_type {
+    line-height: 20px;
+    padding: 0px 0 8px 0;
+    margin: 0 0 3px 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: #4e05e7;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#user_profile_notifications .notification_item .has_read h3.notification_type,
+#user_profile_notifications-2 .notification_item .has_read h3.notification_type {
+    color: #4e05e7;
+    font-size: 10px;
+}
+
+#user_profile_notifications .notification_item h3.notification_title,
+#user_profile_notifications-2 .notification_item h3.notification_title {
+    line-height: 22px;
+    padding: 0px;
+    margin: 5px 0 0 0;
+    text-align: left;
+    color: #212121;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#user_profile_notifications .notification_close,
+#user_profile_notifications-2 .notification_close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0px;
+}
+
+#user_profile_notifications .notification_close a,
+#user_profile_notifications-2 .notification_close a {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    color: #dcdde8 !important;
+    width: 20px;
+    text-align: left;
+    padding: 8px 0 0 0px !important;
+    margin: 0px;
+}
+
+#user_profile_notifications .notification_close a i,
+#user_profile_notifications-2 .notification_close a i {
+    color: #dcdde8 !important;
+    top: 6px !important;
+    left: -13px !important;
+    font-size: 14px !important;
+    text-align: center;
+}
+
+#user_profile_notifications .all_read,
+#user_profile_notifications-2 .all_read {
+    display: none;
+    padding: 15px 15px 10px 10px !important;
+    text-align: center;
+    color: #d3d3e0;
+    border-top: 1px solid #eee;
+}
+
+#user_profile_notifications .all_read i,
+#user_profile_notifications-2 .all_read i {
+    position: relative;
+    top: auto;
+    left: auto;
+    color: #d3d3e0;
+    font-size: 30px;
+}
+
+#topbar-notifications-wrapper.amy-test {
+    transform: translate(22px, -100%) !important;
+}
+
+/* Top Bar Profile Menu */
+#profile_top_menu.dropdown-menu a.dropdown-item {
+    margin: 0px 5px !important;
+    width: auto !important;
+}

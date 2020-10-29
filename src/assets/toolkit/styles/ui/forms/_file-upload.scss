@@ -1,0 +1,42 @@
+/* Form Upload Wrapper */
+.modzee-file-upload {
+    border: 2px dashed #d8dae2;
+    background-color: #f5f6fc;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  
+  .fileupload-wrapper.file-wrapper .card {
+    border: 2px dashed #e8e9f3;
+    border-radius: 0px;
+    background-color: #f5f6fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.card-body .mdb-upload-message {
+      color: #abacb1;
+      // top: auto;
+      // transform: none;
+    }
+  }
+
+  .fileupload-wrapper .card.card-body .mdb-upload-message p {
+    color: #abacb1;
+  }
+  
+  .fileupload-wrapper.file-wrapper .mdb-preview .mdb-render .mdb-preview-img {
+    max-height: 150px;
+  }
+
+
+.fileupload-wrapper {
+    .mdb-upload {
+      .mdb-upload-message {
+        top: 40px;
+        padding: 0;
+      }
+    }
+  }
+  

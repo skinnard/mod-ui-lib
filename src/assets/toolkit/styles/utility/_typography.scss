@@ -1,0 +1,166 @@
+// Typography
+// Anti Aliasing
+
+html {
+    font-size: 15px;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    font-family: "Sailec", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+label {
+    font-family: "Sailec", sans-serif;
+}
+
+.md-form label {
+    font-size: 14px;
+}
+
+.md-form label.active {
+    transform: translateY(-24px) scale(0.8);
+    -moz-transform: translateY(-24px) scale(0.8);
+    -webkit-transform: translateY(-24px) scale(0.8);
+}
+
+.teal-text {
+    color: #4e05e7 !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+body.no-scrolling {
+    overflow: hidden !important;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 34px;
+    color: #252525;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    color: #252525;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    color: #464646;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16px;
+    color: #16cd8a;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Sailec";
+    font-weight: normal;
+}
+
+h4.message_category,
+h4.asset_category {
+    font-size: 13px;
+    color: #16cd8a;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    font-family: "Sailec-Bold";
+    font-weight: normal;
+}
+
+h4.mt-3.form-title,
+h4.mt-3 {
+    font-size: 21px;
+    text-transform: none;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding-bottom: 20px;
+}
+
+.dark_background h1,
+.dark_background h2,
+.dark_background h3,
+.dark_background h4 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #464646;
+}
+
+.dark_background p {
+    color: #ffffff;
+}
+
+p.disclaimer {
+    font-size: 13px;
+}
+
+p.intro {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+strong {
+    font-weight: bold !important;
+}
+
+a {
+    color: #16cd8a;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4e05e7;
+}
+
+a.light-link {
+    color: #4bfbba !important;
+}
+
+a.light-link:hover {
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.dark_background a {
+    text-decoration: none;
+    color: #16cd8a;
+}
+
+.dark_background a:hover {
+    color: #ffffff;
+}

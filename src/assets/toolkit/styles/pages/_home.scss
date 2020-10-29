@@ -1,0 +1,277 @@
+#home-section {
+  .quick-links {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    @include sectionSpacing;
+    grid-column-gap: 26px;
+
+    @include mq(custom, max, 950) {
+      grid-gap: 15px;
+    }
+
+    @include mq(custom, max, 650) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .quick-link {
+      background: #333333;
+      border-radius: $br;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 120px;
+      // box-shadow: $box-shadow;
+
+      @include mq(custom, max, 650) {
+        // height: 150px;
+      }
+
+      &.calendar {
+        background-color: #16cd8a;
+      }
+      &.assets {
+        background-color: #91a8f6;
+      }
+      &.notes {
+        background-color: #4e05e7;
+      }
+      &.profile {
+        background-color: #333333;
+      }
+
+      &__link {
+        color: #ffffff;
+        text-align: center;
+
+        &:hover {
+          .subtitle {
+            text-decoration: underline;
+          }
+        }
+
+        i {
+          font-size: 28px;
+
+          @include mq(custom, max, 650) {
+            font-size: 24px;
+          }
+        }
+
+        .title {
+          margin: 5px 0;
+          font-size: 22px;
+          color: #ffffff;
+          font-weight: 700;
+
+          @include mq(custom, max, 950) {
+            font-size: 18px;
+          }
+
+          @include mq(custom, max, 650) {
+            margin: 0;
+          }
+        }
+
+        .subtitle {
+          font-size: 16px;
+          color: #ffffff;
+          font-weight: 500;
+          margin: 0;
+
+          @include mq(custom, max, 400) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .messages-section {
+    display: flex;
+    @include sectionSpacing;
+    height: 100%;
+
+    @include mq(custom, max, 650) {
+      flex-wrap: wrap;
+    }
+
+    .intro {
+      width: 100%;
+      max-width: 250px;
+      background: url("../../img/messages-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: $br;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mq(custom, max, 1500) {
+        max-width: 180px;
+      }
+
+      @include mq(custom, max, 950) {
+        max-width: 250px;
+      }
+
+      @include mq(custom, max, 650) {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .title {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        color: #ffffff;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .ja-section {
+    display: block;
+    width: 100%;
+
+    .upper {
+      display: flex;
+      width: 100%;
+      @include sectionSpacing;
+
+      @include mq(custom, max, 650) {
+        flex-wrap: wrap;
+      }
+
+      .intro {
+        width: 100%;
+        border-radius: $br;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(
+          360deg,
+          #310b82 -1.54%,
+          rgba(78, 5, 231, 1) 96.15%
+        );
+        mix-blend-mode: normal;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+        max-width: 350px;
+        min-width: 150px;
+        // box-shadow: $box-shadow;
+
+        @include mq(custom, max, 1500) {
+          max-width: 250px;
+        }
+
+        @include mq(custom, max, 650) {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .title {
+          color: #ffffff;
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        .subtitle {
+          color: #ffffff;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .lower {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      @include sectionSpacing;
+      grid-column-gap: 26px;
+
+      @include mq(custom, max, 950) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .most-liked,
+      .most-downloaded {
+        display: flex;
+        flex-wrap: nowrap;
+
+        @include mq(custom, max, 550) {
+          flex-wrap: wrap;;
+        }
+
+        .left,
+        .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .left {
+          min-width: 200px;
+          background: #f6f6f6;
+          border-radius: $br 0 0 $br;
+          padding: 40px;
+
+          @include mq(custom, max, 950) {
+            max-width: 250px;
+          }
+          
+          @include mq(custom, max, 550) {
+            width: 100%;
+            max-width: 100%;
+            border-radius: $br $br 0 0;
+          }
+          
+          @include mq(custom, max, 500) {
+            min-width: 150px;
+            padding: 20px;
+          }
+
+          i {
+            margin-bottom: 20px;
+            font-size: 26px;
+          }
+
+          .title {
+            margin-bottom: 10px;
+          }
+
+          .intro {
+            background: none;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .right {
+          width: 100%;
+          border-radius: 0 $br $br 0;
+          padding: 0;
+
+          @include mq(custom, max, 550) {
+            border-radius: 0 0 $br $br;
+          }
+        }
+      }
+
+      .most-liked {
+        @include mq(custom, max, 950) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+#user_profile_info {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+#user_profile_info .profile_photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0px auto 10px;
+    border: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#user_profile_info .profile_photo img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#user_profile_info h5 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+#user_profile_info h6 {
+    color: #16cd8a;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 4px auto 10px;
+}
+
+/* Profile Page Header */
+#profile_container {
+    background-color: #e4fcf5;
+    padding: 50px;
+    position: relative;
+}
+
+#profile_actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#profile_actions .blue-button {
+    margin-bottom: 7px;
+}
+
+#profile_actions #profile_last_login {
+    font-size: 0.9rem;
+}
+
+#profile_actions #profile_save,
+#profile_actions #profile_edit,
+#profile_position {
+    display: none;
+}
+
+#profile_pic_container span,
+#profile_pic_container input,
+#profile_name_form {
+    display: none;
+}
+
+#profile_data,
+#profile_name_form {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#profile_name_form input {
+    width: 200px !important;
+    margin: auto !important;
+    display: inline-block;
+}

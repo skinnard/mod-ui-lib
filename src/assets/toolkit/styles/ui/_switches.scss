@@ -1,0 +1,77 @@
+#view_switcher {
+    margin: 0px 0 10px 0px;
+    float: right;
+}
+
+#view_switcher .btn {
+    border: 2px solid #e9eaf3;
+    background-color: #ffffff !important;
+    color: #949499 !important;
+    padding: 11px;
+    font-size: 16px !important;
+    line-height: 0 !important;
+    border-radius: 0 !important;
+    z-index: 0;
+    margin-left: 10px;
+}
+
+#view_switcher .btn:hover {
+    background-color: #f5f6fc !important;
+    color: #949499 !important;
+}
+
+#view_switcher .btn.active {
+    background-color: #f5f6fc !important;
+    color: #949499 !important;
+}
+
+.switch label input[type="checkbox"]:checked+.lever::after {
+    background-color: #ffffff;
+    left: 24px;
+}
+
+.switch.round label .lever {
+    width: 45px;
+    height: 26px;
+    border-radius: 10em;
+    margin-left: 0px;
+    margin-right: 0.6rem;
+}
+
+.switch label .lever {
+    background-color: #cfd0db;
+}
+
+.switch label input[type="checkbox"]:checked+.lever {
+    background-color: #16cd8a;
+}
+
+.switch label input[type="checkbox"]:checked+.lever_new_bg {
+    background-color: #fe9232;
+}
+
+.switch.round label .lever:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+}
+
+.switch label {
+    font-size: 16px;
+    /*line-height: 0px;*/
+    color: #c2c2c6;
+    font-weight: 600;
+}
+
+.card .activator {
+    right: 5px;
+    bottom: 10px;
+}
+
+.card .user_switcher {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}

@@ -1,0 +1,30 @@
+/* Search Page - JC & Troth */
+ul.search_tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.search_tabs li {
+    display: inline-block;
+    float: left;
+}
+
+ul.search_tabs li a {
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+ul.search_tabs li a:hover {
+    color: #16cd8a;
+}
+
+ul.search_tabs li a.active {
+    font-weight: bold !important;
+    color: #4c59a4;
+}

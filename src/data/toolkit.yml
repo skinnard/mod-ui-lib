@@ -1,0 +1,20 @@
+colors:
+  primary:
+    Teal: "#16cd8a"
+    Teal Hover: "#17b97e"
+    Indigo: "#4e05e7"
+    Indigo Hover: "#433f87"
+    Red: "#ee2c55"
+    Red Hover: "#cc284b"
+    Light Purple: "#91A8F6"
+    Dark Background: "#333333"
+  secondary:
+    Grey: "#949494"
+    Alt Grey: "#777777"
+    Dark Grey: "#535353"
+    Light Grey: "#f2f2f2"
+    Alt Light Grey: "#C4C4C4"
+  extra:
+    Border: "#e8e9f3"
+    Background: "#f6f6f6"
+    Body Font: "#525252"

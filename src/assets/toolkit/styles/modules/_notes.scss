@@ -1,0 +1,352 @@
+#note-app .tab-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#note-app #training_view_switch {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    border-radius: 0;
+    right: 0;
+    border-top: 1px solid #e9e9ea;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+#note-app #training_view_switch li.active,
+#note-app #training_view_switch li {
+    height: 100%;
+    width: 50% !important;
+    line-height: 30px;
+    padding: 14px 0 0 0;
+    text-align: center;
+    border-radius: 0;
+    font-size: 15px !important;
+}
+
+#note-app .count_note-item {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+#note-app .note_header-item {
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+#note-app .note-list-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 15px;
+}
+
+#note-app .note_body {
+    margin-top: 4px;
+    margin-bottom: 0 !important;
+    font-size: 14px;
+}
+
+#note-app h3.note_title {
+    font-size: 17px;
+}
+
+#note-app .message_detail_delete {
+    margin-bottom: 0;
+    position: absolute;
+    right: 17px;
+}
+
+#note-app .note-list-item time {
+    font-size: 12px;
+    color: #848383;
+}
+
+#note-app button.green-button {
+    width: 100%;
+    min-width: 100%;
+}
+
+#note-app button.green-button,
+#share-modal button.green-button {
+    padding: 10px 40px 10px 40px;
+    line-height: 17px;
+    /* display: inline-block;
+    margin-bottom: 0 !important; */
+}
+
+#note-app .share-button-item {
+    justify-self: left;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+#note-app .ck-editor-title-item .cke_editable p:nth-child(1) {
+    height: auto;
+    font-size: 35px;
+    font-weight: lighter;
+    border: none;
+    margin-bottom: 0px;
+    line-height: 40px;
+    padding-left: 2px;
+}
+
+#note-app .shared-with-number-item {
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+#note-app .shared-with-number-item:before {
+    font-family: 'modzee';
+    font-weight: 300;
+    content: "\31";
+    float: left;
+    font-size: 32px;
+    color: #13cd89;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+#note-app .shared-with-number-item strong {
+    font-weight: lighter !important;
+    color: #7d7d7d;
+}
+
+#share-modal .modal-content {
+    padding: 10px;
+}
+
+#share-modal .modal-header {
+    padding-bottom: 0;
+}
+
+#share-modal .modal-footer,
+#share-modal .modal-header {
+    border: none;
+}
+
+.share-modal-input {
+    background: #f7f7f7;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px 10px 15px;
+}
+
+#delete-confirmation .green-button {
+    line-height: 15px;
+    padding: 15px 40px 10px 40px;
+    width: 100%;
+}
+
+#delete-confirmation.modal-dialog {
+    max-width: 400px;
+}
+
+.input-and-selected-list-container {
+    background: #F6F7FD;
+}
+
+.invite-users-container {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#delete-confirmation .modal-header {
+    border: none !important;
+}
+
+#delete-confirmation .modal-footer div {
+    width: 100%
+}
+
+/********************************** START NOTES STYLES *********************************/
+#note-app .alert-danger {
+    width: 60%;
+}
+
+#note-app .alert-danger .alert-heading p {
+    position: absolute !important;
+    top: 40% !important;
+    text-align: center !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+#note-app .alert-heading {
+    top: 35% !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+#note-app .alert-heading,
+#note-app .alert-danger .alert-heading p,
+#note-app .alert-danger .alert-someone-editing .icon {
+    max-width: 870px;
+    width: 100%;
+}
+
+#note-app .alert-danger .alert-someone-editing .icon {
+    font-size: 60px;
+    margin-top: 17%;
+    color: #13cd8a;
+    text-align: center;
+}
+
+#note-app .tab-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#note-app #training_view_switch li.active,
+#note-app #training_view_switch li {
+    height: 100%;
+    width: 50% !important;
+    line-height: 20px;
+    padding: 15px 10px 10px;
+    text-align: center;
+    border-radius: 0;
+    font-size: 15px !important;
+}
+
+#note-app .count_note-item {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+#note-app .note_header-item {
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+#note-app .note-list-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 15px;
+}
+
+#note-app .note_body {
+    margin-top: 4px;
+    margin-bottom: 0 !important;
+    font-size: 14px;
+}
+
+#note-app h3.note_title {
+    font-size: 17px;
+}
+
+#note-app .message_detail_delete {
+    margin-bottom: 0;
+    position: absolute;
+    right: 17px;
+}
+
+#note-app .note-list-item time {
+    font-size: 12px;
+    color: #848383;
+}
+
+#note-app button.green-button {
+    width: 100%;
+    min-width: 100%;
+}
+
+#note-app button.green-button,
+#share-modal button.green-button {
+    padding: 10px 40px 10px 40px;
+    line-height: 17px;
+    /* display: inline-block;
+    margin-bottom: 0 !important; */
+}
+
+#note-app .share-button-item {
+    justify-self: left;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+#note-app .ck-editor-title-item .cke_editable p:nth-child(1) {
+    height: auto;
+    font-size: 35px;
+    font-weight: lighter;
+    border: none;
+    margin-bottom: 0px;
+    line-height: 40px;
+    padding-left: 2px;
+}
+
+#note-app .shared-with-number-item {
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+#note-app .shared-with-number-item:before {
+    font-family: 'modzee';
+    font-weight: 300;
+    content: "\31";
+    float: left;
+    font-size: 32px;
+    color: #13cd89;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+#note-app .shared-with-number-item strong {
+    font-weight: lighter !important;
+    color: #7d7d7d;
+}
+
+#share-modal .modal-content {
+    padding: 10px;
+}
+
+#share-modal .modal-header {
+    padding-bottom: 0;
+}
+
+#share-modal .modal-footer,
+#share-modal .modal-header {
+    border: none;
+}
+
+.share-modal-input {
+    background: #f7f7f7;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px 10px 15px;
+}
+
+#delete-confirmation .green-button {
+    line-height: 15px;
+    padding: 15px 40px 10px 40px;
+    width: 100%;
+}
+
+#delete-confirmation.modal-dialog {
+    max-width: 400px;
+}
+
+.input-and-selected-list-container {
+    background: #F6F7FD;
+}
+
+.invite-users-container {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#delete-confirmation .modal-header {
+    border: none !important;
+}
+
+#delete-confirmation .modal-footer div {
+    width: 100%
+}

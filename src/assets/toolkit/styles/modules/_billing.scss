@@ -1,0 +1,358 @@
+#billing_container {
+    display: none !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+#billing_container.active {
+    display: block !important;
+}
+
+#billing_container i {
+    color: #bbbbc3;
+    font-size: 70px !important;
+}
+
+#billing_container p {
+    font-weight: normal;
+    font-size: 19px;
+}
+
+#billing_container.active:not(.force_hide) {
+    display: flex !important;
+}
+
+#billing_container.force_hide.active {
+    display: none !important;
+}
+
+#billing_container .load_screen {
+    display: none;
+}
+
+#billing_container .billing-overlay-prompt {
+    z-index: 1000;
+    display: flex;
+}
+
+#billing_container .billing-overlay-container {
+    padding: 40px;
+    width: 510px;
+    background: white;
+    position: relative;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: auto;
+}
+
+/* -------- Billing styles ---------- */
+#account_billing_container .receipts-container {
+    display: none;
+}
+
+#account_billing_container button.btn,
+#account_billing_container .md-toast-message {
+    white-space: nowrap !important;
+}
+
+#account_billing_container .btn-edit-payment-information,
+#account_billing_container .btn-edit-payment-method,
+#account_billing_container .btn-request-modules,
+#account_billing_container .btn-request-more-users,
+#account_billing_container .btn-cancel-account {
+    margin-left: 0;
+}
+
+// #profile_container,
+#account_billing_container .content_tab_wrapper {
+    display: none;
+}
+
+#account_billing_container .receipts-list {
+    width: 100%;
+}
+
+#account_billing_container .billing-users-usage-display {
+    border-radius: 4px;
+    background: #D2D2D2;
+    position: relative;
+    overflow: hidden;
+    height: 46px;
+    margin-top: 6px;
+}
+
+#account_billing_container .billing-users-usage-total-count {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px;
+    z-index: 100;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#account_billing_container .billing-users-usage-total-count small {
+
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+    vertical-align: middle;
+
+}
+
+#account_billing_container .billing-users-usage-maximum-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    z-index: 100;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+#account_billing_container .billing-users-usage-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #36ba8a;
+    width: 0%;
+}
+
+#account_billing_container .billing-users-usage-display.maximum .billing-users-usage-progress {
+
+    width: 100%;
+    background: #e7055a;
+
+}
+
+#account_billing_container .billing-users-usage-display.warning .billing-users-usage-progress {
+    background: #ff0000;
+    width: 100%;
+}
+
+#account_billing_container .billing-account-details {
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    padding: 20px 8px;
+}
+
+#account_billing_container .billing-account-detail {
+    margin: 6px 0;
+}
+
+#account_billing_container .module-option-template {
+    display: none;
+}
+
+#account_billing_container .module-request-option-template {
+    display: none;
+}
+
+#account_billing_container .module-request-option {
+    cursor: pointer;
+}
+
+#account_billing_container .table_row-template {
+    display: none;
+}
+
+#account_billing_container .overlay-prompt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    display: flex;
+}
+
+#account_billing_container .overlay-container {
+    padding: 40px;
+    width: 510px;
+    background: white;
+    position: relative;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: auto;
+}
+
+#account_billing_container .overlay-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#account_billing_container .btn-overlay-close {
+    border: none;
+    cursor: pointer;
+}
+
+#account_billing_container .btn-edit-billing-information {
+    margin-left: 0;
+}
+
+#account_billing_container .payment-accepted-cards {
+    padding-bottom: 20px;
+}
+
+#account_billing_container .ui-loading {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 90px;
+    padding: 8px;
+    margin: 6px 0;
+    max-width: 400px;
+}
+
+#account_billing_container .ui-loading.small {
+    max-width: 150px;
+}
+
+#card-errors {
+    color: red;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#account_billing_container .cc-container {
+    border: 3px solid #E9EBF5;
+    border-radius: 12px;
+    ;
+    background: #F6F7FC;
+    position: relative;
+    width: 338px;
+    height: 200px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+#account_billing_container .cc-dots {
+    margin-right: 4px;
+}
+
+#account_billing_container .cc-dot {
+    background: #333333;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 3px;
+    width: 8px;
+    height: 8px;
+}
+
+#account_billing_container .cc-logo {
+    position: absolute;
+    top: -30px;
+    left: 3px;
+}
+
+#account_billing_container .cc-card-number {
+    position: absolute;
+    top: 70px;
+    font-size: 22px;
+}
+
+#account_billing_container .cc-card-name {
+    position: absolute;
+    width: 170px;
+    top: 130px;
+}
+
+#account_billing_container .cc-card-expiry {
+    position: absolute;
+    width: 108px;
+    top: 130px;
+    left: 201px;
+}
+
+#account_billing_container .cc-label {
+    color: #BBBECF;
+    font-weight: bold;
+}
+
+#account_billing_container .cc-value {
+    color: #333333;
+}
+
+#account_billing_container .cc-card-name .cc-value {
+    text-overflow: ellipsis;
+    width: 170px;
+    overflow: auto;
+    height: 28px;
+}
+
+#account_billing_container .invoice-download a {
+    font-weight: bold;
+    line-height: 1.5 !important;
+}
+
+#account_billing_container .module-request-options-container {
+    margin-bottom: 20px;
+}
+
+#account_billing_container .module-request-option {
+    padding: 8px;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    pointer-events: initial !important;
+}
+
+#account_billing_container .module-request-option.disabled {
+    padding: 8px;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    opacity: 0.3;
+    pointer-events: none !important;
+}
+
+#account_billing_container .module-request-option.disabled input {
+    pointer-events: none !important;
+}
+
+#account_billing_container .module-request-option-checkbox input {
+    pointer-events: initial !important;
+}
+
+#account_billing_container .StripeElement {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #888888;
+    background-color: white;
+}
+
+#account_billing_container .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+#account_billing_container .StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+#account_billing_container .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+#account_tab_container .classic-tabs .nav li a.active {
+    border-top: 2px solid #16cd8a;
+    border-bottom: 2px solid #16cd8a;
+    border-right: 2px solid #16cd8a;
+    background-color: #16cd8a;
+    color: #ffffff;
+}
+
+#account_tab_container .classic-tabs .nav li:first-child a.active {
+    border-left: 2px solid #16cd8a;
+}
+
+#account_tab_container .classic-tabs .nav li:last-child a.active {
+    border-right: 2px solid #16cd8a;
+}
+
+/* END - Billing styles */

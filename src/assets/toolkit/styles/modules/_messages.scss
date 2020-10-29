@@ -1,0 +1,46 @@
+
+
+/* Messages Landing Page */
+#message_home {
+    min-height: 430px;
+    position: relative;
+    width: 100%;
+
+    @include mq(custom, max, 640) {
+      display: none !important;
+    }
+}
+
+#message_home .message_home_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#message_home .vertical_horizontal {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    /*it can be fixed too*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+
+#message_home .has_messages {
+    display: none;
+    height: 170px;
+}
+
+#message_home .no_messages {
+    display: none;
+    height: 350px;
+}

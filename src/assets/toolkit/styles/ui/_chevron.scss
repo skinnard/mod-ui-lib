@@ -1,0 +1,38 @@
+#page .select-wrapper span.caret::after {
+    top: -4px;
+}
+
+#page .select-wrapper span.caret::before,
+.select-wrapper span.caret::after {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 3;
+}
+
+#page .select-wrapper span.caret::before {
+    top: 0;
+}
+
+#page .select-wrapper span.caret {
+    color: initial;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    font-size: 0.63rem;
+    background-image: url('/app/img/chevron.png');
+    background-size: cover;
+    width: 30px;
+    z-index: 3;
+    height: 30px;
+    background-color: #f5f6fc !important;
+}
+
+#page .select-wrapper span.caret>#text {
+    z-index: -9 !important;
+}
+
+#page #calendar_wrapper .select-wrapper span.caret {
+    background-color: #fff !important;
+    top: 13px;
+}

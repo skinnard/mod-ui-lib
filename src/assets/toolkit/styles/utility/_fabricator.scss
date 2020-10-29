@@ -1,0 +1,61 @@
+// for some reason need to push these over on fabricator
+ol, ul, dl {
+    margin-left: 20px;
+}
+
+// Icons page
+#fab-icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+    @include mq(custom, max, 1400) {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    @include mq(custom, max, 1200) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include mq(custom, max, 800) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include mq(custom, max, 650) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    @include mq(custom, max, 450) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq(custom, max, 330) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper {
+        background: #d6d6d6;
+        border-radius: $br;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        min-height: 120px;
+
+        .icon {
+            margin-bottom: 10px;
+
+            svg {
+                width: 30px;
+                height: auto;
+            }
+        }
+
+        .title {
+            @include font-size(12);
+        }
+    }
+}

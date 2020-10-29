@@ -1,0 +1,141 @@
+
+body.active #desktop-nav,
+body.active #mobile-nav {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  z-index: 10;
+
+  .nav.nav-tabs,
+  .nav.md-pills {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  .nav-tabs {
+    margin-bottom: 36px !important;
+    background-color: #16cd8a !important;
+  }
+
+  .dropdown-menu {
+    min-width: 260px;
+    left: 0 !important;
+    top: 24px !important;
+  }
+}
+
+body.active #desktop-nav,
+body.active #mobile-nav {
+  width: 100%;
+}
+
+#desktop-nav {
+  display: flex;
+  height: 64px;
+
+  i {
+    font-size: 28px;
+  }
+
+  .menu-target {
+    background-color: #000;
+    width: 80px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(custom, min, 1176) {
+      display: none !important;
+    }
+
+    @include mq(custom, max, 550) {
+      display: none !important;
+    }
+
+    i {
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
+    }
+
+    &.flex {
+      display: flex;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  #menu_logo {
+    display: none;
+
+    @include mq(custom, max, 550) {
+      display: block;
+      min-width: 150px;
+      width: 150px;
+      padding-left: 20px;
+
+      a {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        img {
+          object-fit: contain;
+          object-position: left center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    @include mq(custom, max, 400) {
+      min-width: auto;
+      max-width: 100px;
+      width: 100%;
+    }
+  }
+
+  .desktop-menu-items {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    @include mq(custom, max, 550) {
+      justify-content: flex-end;
+    }
+
+    .menu-items-wrapper {
+      height: 64px;
+      display: flex;
+      align-items: center;
+
+      @include mq(custom, max, 550) {
+        display: none;
+      }
+
+      .menu-items {
+        padding-right: 15px;
+
+        i {
+          color: #fff;
+        }
+      }
+
+      .profile-wrapper.show {
+        .profile-top-menu {
+          transform: translate3d(-19px, 64px, 0px);
+        }
+      }
+    }
+  }
+}

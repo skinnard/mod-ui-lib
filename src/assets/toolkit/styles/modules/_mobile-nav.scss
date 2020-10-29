@@ -1,0 +1,69 @@
+#newMobileNavContainer {
+  #mobile-nav {
+    display: none;
+
+    @include mq(custom, max, 550) {
+      display: flex;
+    }
+
+    i {
+      font-size: 32px;
+      line-height: 32px;
+      padding: 0px;
+      color: #fff;
+   
+      &:focus,
+      &:hover,
+      &:active {
+        color: #16cd8a;
+      }
+    }
+
+
+    .menu-target {
+      background: black;
+      width: 60px;
+      height: 100%;
+      display: flex;
+
+      a {
+        padding: 16px 8px;
+
+        i {
+          color: #16cd8a;
+        }
+      }
+    }
+
+    .menu-items {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      #mobile_unread_chat_messages {
+        .mobile_chat_icon {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+body.active.mobile {
+  #newMobileNavContainer {
+    .mobile-nav-bottom {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      bottom: 0;
+
+      @include mq(custom, max, 550) {
+        display: flex;
+      }
+    }
+  }
+}

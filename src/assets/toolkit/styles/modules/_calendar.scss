@@ -1,0 +1,313 @@
+/* Calendar */
+#Event_listing {
+  #calendar_wrapper {
+    .fc-state-active {
+      background-color: #16cd8a;
+      color: #ffffff;
+      border-color: #16cd8a;
+    }
+
+    .fc-axis {
+      padding: 0 15px;
+      color: #a1a8af;
+    }
+
+    button {
+      font-size: 16px;
+      font-weight: 600;
+      height: auto;
+    }
+
+    .fc-time-grid .fc-event-container {
+      margin: 0 7px 0 7px;
+    }
+
+    .fc-list-item-marker {
+      display: none;
+    }
+
+    td {
+      border-bottom-style: none;
+      border-left-style: none;
+      border-top-style: none;
+      border-right: 1px solid #eeeeee;
+
+      .fc-day-top {
+        border-bottom-style: none;
+      }
+
+      .fc-minor {
+        background-color: #ffffff;
+        border-bottom: 1px solid #f4f4f4;
+      }
+
+      .fc-minor.fc-today {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+
+    th {
+      border-bottom-style: none;
+      border-left-style: none;
+      border-top-style: none;
+      border-right: 1px solid #eeeeee;
+
+      .fc-day-header {
+        border-bottom-style: none;
+        border-right: 1px solid #eeeeee;
+
+        span {
+          font-weight: 900;
+          color: #ccc;
+        }
+      }
+    }
+
+    .fc-toolbar.fc-header-toolbar {
+      padding: 0 15px;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #cccdd5;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .fc-left,
+      .fc-center,
+      .fc-right {
+        width: 33.33333333%;
+        float: none;
+      }
+
+      .fc-left {
+        order: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        input {
+          margin: 0;
+
+          @include mq(custom, max, 450) {
+            font-size: 14px;
+          }
+        }
+
+        @include mq(custom, max, 1500) {
+          order: 2;
+          width: 30%;
+        }
+
+        @include mq(custom, max, 750) {
+          order: 1;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+      }
+
+      .fc-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @include mq(custom, max, 750) {
+          width: 50%;
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          float: none;
+          margin: 0;
+
+         @include mq(custom, max, 450) {
+           font-size: 18px;
+         } 
+        }
+
+        .fc-state-default {
+          border-color: #ececf1;
+          border-color: #16cd8a;
+          color: #16cd8a;
+          background-image: none;
+          background-color: #ffffff;
+          border: 2px solid;
+          text-shadow: none;
+          text-transform: capitalize;
+          padding: 13px 18px;
+          box-shadow: none;
+        }
+
+        .fc-prev-button {
+          margin-right: 10px;
+        }
+
+        .fc-prev-button,
+        .fc-next-button {
+          border-style: none;
+          padding: 0px;
+
+          i {
+            font-size: 40px;
+
+            @include mq(custom, max, 450) {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+
+      .fc-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        order: 2;
+
+        @include mq(custom, max, 1500) {
+          order: 2;
+          width: 50%;
+        }
+
+        @include mq(custom, max, 750) {
+          order: 2;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .fc-button-group {
+          display: flex; 
+          float: none;
+          width: 100%;
+
+          button {
+            height: 46px;
+            width: 20%;
+            min-width: 80px;
+
+            @include mq(custom, max, 750) {
+              width: 20%;
+              min-width: auto;
+            }
+
+            @include mq(custom, max, 420) {
+              width: 33.33333%;
+              min-width: auto;
+            }
+          }
+
+          .fc-state-default {
+            border-color: #ececf1;
+            color: #9ea5ac;
+            background-image: none;
+            background-color: #f6f7fc;
+            box-shadow: none;
+
+            .fc-agendaWeek-button {
+              border-right-style: none;
+            }
+
+            .fc-corner-right {
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+            }
+
+            .fc-corner-left {
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+            }
+
+            &.fc-agendaDay-button {
+              border-right-style: none;
+            }
+          }
+
+          .fc-state-active {
+            background-color: #16cd8a;
+            color: #ffffff;
+            border-color: #16cd8a;
+          }
+
+          // .fc-state-active,
+          // .fc-state-disabled,
+          // .fc-state-down,
+          // .fc-state-hover {
+          //   color: #333;
+          //   background-color: #16cd8a;
+          // }
+        }
+      }
+    }
+
+    .fc-view-container {
+      .fc-view {
+        table {
+          .fc-head {
+            .fc-head-container {
+              border-bottom: none;
+
+              .fc-day-header {
+                text-align: left;
+                padding: 16px 8px 0px 20px;
+                border-bottom-style: none;
+
+                span {
+                  color: #757575;
+                  border-bottom: 0px;
+                }
+              }
+            }
+          }
+
+          .fc-body {
+            .fc-event-container .colour_block,
+            .fc-list-item .colour_block,
+            #event_filter .colour_block {
+              width: 10px;
+              height: 10px;
+              border-radius: 10px;
+              margin-right: 2px;
+              display: inline-block;
+              margin-left: -5px;
+              border: 1px solid #ffffff;
+              margin-bottom: -2px;
+            }
+
+            .fc-widget-content {
+              // border-bottom: 1px dashed #f4f4f4;
+
+              .fc-today {
+                border-bottom: 1px dashed #ffffff;
+                background: #fcfcfc;
+                border-right: solid 1px #e0e0e0;
+              }
+
+              .fc-row {
+                .fc-day-number {
+                  padding: 16px 20px 16px 20px;
+                  font-size: 16px;
+                  color: #212121;
+                  float: left;
+                }
+              }
+            }
+
+            .fc-event-container {
+              .fc-event {
+                border: none;
+              }
+
+              .fc-content {
+                padding: 4px 4px 2px 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

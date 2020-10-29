@@ -1,0 +1,52 @@
+/* Login Screen */
+#company_find_wrapper {
+    display: none;
+    padding: 20px 0 30px 0;
+    text-align: center;
+}
+
+#company_find_results {
+    display: none;
+    padding: 20px 0 30px 0;
+}
+
+#company_find_results .company_result {
+    display: block;
+    border: 2px solid #e9eaf4;
+    border-radius: 5px;
+    padding: 10px 10px 5px 10px;
+    text-align: left;
+    cursor: pointer;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+#company_find_results .company_result:hover {
+    border: 2px solid #cfcfd4;
+    background-color: #f5f6fc;
+    cursor: pointer;
+}
+
+#company_find_results .company_result .company_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #595959;
+}
+
+#company_find_results .company_result .company_domain {
+    font-size: 14px;
+    font-weight: normal;
+    color: #8a8a8a;
+}
+
+#company_find_no_results {
+    padding: 10px 0px 0px 0px;
+    display: none;
+    text-align: center;
+}
+
+#company_find_searching {
+    padding: 10px 0px;
+    display: none;
+    text-align: center;
+}

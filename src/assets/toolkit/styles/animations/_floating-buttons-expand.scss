@@ -1,0 +1,41 @@
+@keyframes floating-btn-forwards-1 {
+  0% {
+    top: 25px;
+  }
+  85% {
+    top: -105px;
+  }
+  100% {
+    top: -95px;
+  }
+}
+
+@keyframes floating-btn-backwards-1 {
+  0% {
+    top: -95px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+
+@keyframes floating-btn-forwards-2 {
+  0% {
+    top: 25px;
+  }
+  85% {
+    top: -55px;
+  }
+  100% {
+    top: -50px;
+  }
+}
+
+@keyframes floating-btn-backwards-2 {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 25px;
+  }
+}

@@ -1,0 +1,60 @@
+/*Date picker */
+.picker--opened .picker__frame {
+    top: 20%;
+}
+
+.picker .picker__box {
+    display: block;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.picker__box .picker__header .picker__date-display {
+    background-color: #16cd8a;
+}
+
+.picker__box .picker__header .picker__date-display .picker__weekday-display {}
+
+.picker__box .picker__header .picker__date-display .picker__month-display {
+    display: inline-block;
+}
+
+.picker__box .picker__header .picker__date-display .picker__day-display {
+    font-weight: 400;
+    display: inline-block;
+}
+
+.picker__box .picker__header .picker__date-display .picker__year-display {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+}
+
+.picker__box .picker__table .picker__day.picker__day--today {
+    color: #41bd8f;
+}
+
+.picker__box .picker__table .picker__day {
+    padding: 5px 0 !important;
+}
+
+.picker__box .picker__table .picker__day--infocus {
+    padding: 0;
+}
+
+.picker__box .picker__table .picker--focused,
+.picker__box .picker__table .picker__day--selected,
+.picker__box .picker__table .picker__day--selected:hover {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    background-color: #41bd8f;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/*End Date Picker*/
